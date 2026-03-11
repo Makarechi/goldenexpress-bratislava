@@ -1,3 +1,5 @@
+const asset = (file: string) => `${import.meta.env.BASE_URL}assets/${file}`
+
 export type HeroMetric = {
   value: string
   label: string
@@ -108,7 +110,7 @@ export const routeStories: RouteStory[] = [
       'GoldenExpress describes the castle pause as a guided panoramic moment. The train gets visitors there without a steep walk, then hands the city over from above.',
     note: 'Local guide + terrace panorama',
     focusStops: ['Bratislava Castle', "St. Martin's Cathedral", 'Former fortification walls'],
-    image: '/assets/hero-castle.jpg',
+    image: asset('hero-castle.jpg'),
     accent: '#f2ba5f',
     mapX: 28,
     mapY: 16,
@@ -121,7 +123,7 @@ export const routeStories: RouteStory[] = [
       'Instead of breaking the visit into disconnected walks, the train ties medieval gateways, palaces and the compact centre into one legible sequence.',
     note: 'Gate + squares + palace frontage',
     focusStops: ["Michael's Gate", 'Pedestrian zone', "Primate's Palace"],
-    image: '/assets/hero-gate.jpg',
+    image: asset('hero-gate.jpg'),
     accent: '#7ad2c3',
     mapX: 48,
     mapY: 45,
@@ -134,7 +136,7 @@ export const routeStories: RouteStory[] = [
       'The published city-tour copy leans on the theatre district, civic buildings and the Danube-side route as an easy sightseeing spine.',
     note: 'Theatre district + river edge',
     focusStops: ['Slovak National Theatre', 'Slovak National Gallery', 'Harbor'],
-    image: '/assets/train-station.jpg',
+    image: asset('train-station.jpg'),
     accent: '#8ebdff',
     mapX: 67,
     mapY: 63,
@@ -147,7 +149,7 @@ export const routeStories: RouteStory[] = [
       'The route shortens the city into comfortable hop-off moments, especially helpful for families, seniors or first-time visitors trying to see the essentials in one pass.',
     note: 'Blue Church + central monuments',
     focusStops: ['Blue Church', 'Mirbach Palace', 'Statue "Schöne Náci"'],
-    image: '/assets/train-front.jpg',
+    image: asset('train-front.jpg'),
     accent: '#93d4ff',
     mapX: 80,
     mapY: 74,
@@ -160,7 +162,7 @@ export const routeStories: RouteStory[] = [
       'GoldenExpress highlights the sunset version of Bratislava: the Danube below, city lights switching on, and a view that can stretch up to 100 km in clear weather.',
     note: 'UFO tower + sunset over the Danube',
     focusStops: ['U.F.O.', 'Slavín', 'Danube panorama'],
-    image: '/assets/hero-view.jpg',
+    image: asset('hero-view.jpg'),
     accent: '#ffb86e',
     mapX: 42,
     mapY: 58,
@@ -200,32 +202,32 @@ export const galleryItems: GalleryItem[] = [
   {
     title: 'Castle arrival',
     caption: 'Hero imagery adapted from the existing GoldenExpress slider.',
-    image: '/assets/hero-castle.jpg',
+    image: asset('hero-castle.jpg'),
   },
   {
     title: 'Historic gate approach',
     caption: 'Old Town perspective for the medieval core of the route.',
-    image: '/assets/hero-gate.jpg',
+    image: asset('hero-gate.jpg'),
   },
   {
     title: 'Night panorama',
     caption: 'Evening view towards the Danube and the UFO experience.',
-    image: '/assets/hero-view.jpg',
+    image: asset('hero-view.jpg'),
   },
   {
     title: 'Train profile',
     caption: 'Gallery photo from the train category on goldenexpress.eu.',
-    image: '/assets/train-side.jpg',
+    image: asset('train-side.jpg'),
   },
   {
     title: 'Departure point',
     caption: 'A stronger operational view for the loading and embarkation mood.',
-    image: '/assets/train-station.jpg',
+    image: asset('train-station.jpg'),
   },
   {
     title: 'Front carriage',
     caption: 'Closer train detail for product-focused sections and cards.',
-    image: '/assets/train-front.jpg',
+    image: asset('train-front.jpg'),
   },
 ]
 
@@ -261,28 +263,28 @@ export const landmarkFeatures: LandmarkFeature[] = [
     title: 'Bratislava Castle',
     copy:
       'The highest visual anchor on the route and one of the strongest reasons to pick the train over a long uphill walk.',
-    image: '/assets/hero-castle.jpg',
+    image: asset('hero-castle.jpg'),
     stop: 'Stop 01',
   },
   {
     title: "Michael's Gate",
     copy:
       'The surviving medieval gate gives the route a recognisable Old Town silhouette and instantly signals central Bratislava.',
-    image: '/assets/hero-gate.jpg',
+    image: asset('hero-gate.jpg'),
     stop: 'Stop 02',
   },
   {
     title: 'Blue Church',
     copy:
       'A postcard landmark that works perfectly in marketing cards and in route storytelling for first-time visitors.',
-    image: '/assets/train-front.jpg',
+    image: asset('train-front.jpg'),
     stop: 'Stop 08',
   },
   {
     title: 'UFO Observation Deck',
     copy:
       'The evening route gains real product tension when the Danube and UFO tower are presented as the final viewpoint crescendo.',
-    image: '/assets/hero-view.jpg',
+    image: asset('hero-view.jpg'),
     stop: 'Stop 11',
   },
 ]

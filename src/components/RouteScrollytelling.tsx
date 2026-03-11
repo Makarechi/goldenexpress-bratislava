@@ -7,6 +7,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import type { RouteStory } from '../data/siteContent'
 
+const asset = (file: string) => `${import.meta.env.BASE_URL}assets/${file}`
+
 type RouteScrollytellingProps = {
   stories: RouteStory[]
 }
@@ -144,7 +146,7 @@ export function RouteScrollytelling({ stories }: RouteScrollytellingProps) {
 
             <img
               className="route-story__map"
-              src="/assets/route-map.jpg"
+              src={asset('route-map.jpg')}
               alt="GoldenExpress Bratislava route map"
             />
 

@@ -33,7 +33,8 @@ import './App.css'
 gsap.registerPlugin(ScrollTrigger)
 
 const revealViewport = { once: true, amount: 0.25 }
-const heroTourVideo = '/assets/bratislava-tour.mp4'
+const asset = (file: string) => `${import.meta.env.BASE_URL}assets/${file}`
+const heroTourVideo = asset('bratislava-tour.mp4')
 
 function App() {
   const [heroRenderMode, setHeroRenderMode] = useState<'checking' | 'fallback' | 'webgpu'>(
@@ -208,7 +209,7 @@ function App() {
                 loop
                 muted
                 playsInline
-                poster="/assets/train-side.jpg"
+                poster={asset('train-side.jpg')}
                 preload="metadata"
               >
                 <source src={heroTourVideo} type="video/mp4" />
@@ -225,7 +226,7 @@ function App() {
               animate={{ opacity: 1, y: 0, rotate: 8 }}
               transition={{ duration: 0.95, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
             >
-              <img src="/assets/hero-gate.jpg" alt="Historic Bratislava gate on the route" />
+              <img src={asset('hero-gate.jpg')} alt="Historic Bratislava gate on the route" />
             </motion.figure>
 
             <motion.div
@@ -299,7 +300,7 @@ function App() {
               viewport={revealViewport}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <img src="/assets/about-train.png" alt="GoldenExpress historic mini train" />
+              <img src={asset('about-train.png')} alt="GoldenExpress historic mini train" />
               <div className="manifesto__badge">
                 <span>From the existing GoldenExpress copy</span>
                 <strong>Hospitality, tourism and custom rides for nearly two decades</strong>
