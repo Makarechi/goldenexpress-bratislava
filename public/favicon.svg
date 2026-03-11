@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GoldenExpress">
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8d47b" />
+      <stop offset="100%" stop-color="#f4b85c" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#071625" />
+  <path d="M14 40h36l-3 7H17Z" fill="url(#g)" />
+  <path
+    d="M18 22a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v18H18Zm7 3h14v7H25Z"
+    fill="none"
+    stroke="url(#g)"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4"
+  />
+  <circle cx="24" cy="47" r="4" fill="#7ad2c3" />
+  <circle cx="40" cy="47" r="4" fill="#7ad2c3" />
+</svg>

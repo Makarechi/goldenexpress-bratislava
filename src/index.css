@@ -1,0 +1,85 @@
+:root {
+  --bg: #06111c;
+  --panel: #071625;
+  --panel-soft: #0d2338;
+  --accent: #f4b85c;
+  --accent-soft: #7ad2c3;
+  --text-primary: #f8f4ea;
+  --text-muted: rgba(248, 244, 234, 0.82);
+  --text-subtle: rgba(248, 244, 234, 0.62);
+  --font-body: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  --font-display: 'Syne', 'Trebuchet MS', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  background:
+    radial-gradient(circle at top left, rgba(244, 184, 92, 0.09), transparent 32%),
+    radial-gradient(circle at 80% 16%, rgba(122, 210, 195, 0.08), transparent 24%),
+    linear-gradient(180deg, #06111c 0%, #0a1d2f 48%, #06111c 100%);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.42), transparent 84%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+canvas,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  width: 100%;
+}
+
+::selection {
+  color: #071625;
+  background: rgba(244, 184, 92, 0.92);
+}
